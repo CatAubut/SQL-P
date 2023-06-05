@@ -1,0 +1,29 @@
+CREATE TABLE cafe (id INTEGER PRIMARY KEY, item TEXT, quantity INTEGER, price INTEGER, dairy_free TEXT);
+
+INSERT INTO cafe VALUES (1, "banana", 20, 2, "yes");
+INSERT INTO cafe VALUES (2, "cookies", 10, 5, "yes");
+INSERT INTO cafe VALUES (3, "brownies", 12, 4, "no");
+INSERT INTO cafe VALUES (4, "fruit smoothie", 25, 6, "yes");
+INSERT INTO cafe VALUES (5, "coffee", 30, 3, "yes");
+INSERT INTO cafe VALUES (6, "tea", 30, 2, "yes");
+INSERT INTO cafe VALUES (7, "lemonade", 26, 3, "yes");
+INSERT INTO cafe VALUES (8, "scone", 14, 4, "no");
+INSERT INTO cafe VALUES (9, "donut", 12, 4.50, "yes");
+INSERT INTO cafe VALUES (10, "espresso", 20, 4, "yes");
+INSERT INTO cafe VALUES (11, "carrot_muffin", 12, 3.50, "no");
+INSERT INTO cafe VALUES (12, "breakfast_sandwich", 10, 5, "no");
+INSERT INTO cafe VALUES (13, "croissant", 18, 4.25, "yes");
+INSERT INTO cafe VALUES (14, "cupcake", 12, 3.50, "no");
+INSERT INTO cafe VALUES (15, "fruit_bowl", 8, 6, "yes");
+
+SELECT SUM(quantity) FROM cafe;
+
+SELECT * FROM cafe ORDER BY price; 
+
+SELECT * FROM cafe  WHERE quantity >=20 ORDER BY quantity;
+
+--display the total quantity of items FROM cafe
+
+--display the items FROM cafe ordered by price
+
+--display the items where quantity is 20 or more, ORDER BY quantity
